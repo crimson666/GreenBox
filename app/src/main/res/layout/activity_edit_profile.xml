@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_profile"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/gradientbackground2"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:onClick="choose"
+                            android:src="@drawable/male" />
+
+                        <ImageButton
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="60dp"
+                            android:background="@android:color/transparent"
+
+                            android:src="@drawable/camera"
+                            android:id="@+id/edit_pic"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+
+                        android:text="BIJOY BSAU"
+                        android:textColor="#fff"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="230dp"
+                    android:background="#F66274">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    /*username*/
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="UserID"
+                            android:textSize="19dp"
+                            android:id="@+id/txt_username"/>
+
+                        <EditText
+
+                            android:id="@+id/username"
+                            style="@style/edit_txt2"
+                            android:layout_width="230dp"
+                            android:text="Phone"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+                    /*phone*/
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="Mobile"
+                            android:textSize="19dp"
+                            android:id="@+id/txt_mobile"/>
+
+                        <EditText
+
+                            android:id="@+id/phone"
+                            style="@style/edit_txt2"
+                            android:layout_width="230dp"
+                            android:text="Phone"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+                    /*email*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textSize="19dp"
+                            android:id="@+id/txt_email"/>
+
+                        <EditText
+
+                            android:id="@+id/email"
+                            style="@style/edit_txt2"
+                            android:layout_width="230dp"
+                            android:text="Email"
+
+                            />
+
+                    </LinearLayout>
+
+                    /*pin*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="Pin No."
+                            android:textSize="19dp"
+                            android:id="@+id/txt_pin"/>
+
+                        <EditText
+
+                            android:id="@+id/pin"
+                            style="@style/edit_txt2"
+                            android:layout_width="230dp"
+                            android:text="Email"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    /*email*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="City"
+                            android:textSize="19dp"
+                            android:id="@+id/txt_City"/>
+
+                        <EditText
+
+                            android:id="@+id/city"
+                            style="@style/edit_txt2"
+                            android:layout_width="230dp"
+                            android:text="Email"
+
+                            />
+
+                    </LinearLayout>
+
+                    /*address*/
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:text="Address"
+                        android:id="@+id/txt_address"
+                        android:textSize="19dp" />
+
+                    <EditText
+
+                        android:id="@+id/address"
+                        style="@style/edit_txt3"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:text="address"
+
+                        />
+
+
+
+                    <Button
+
+                        android:id="@+id/button1"
+                        style="@style/buttons_style2"
+                        android:layout_width="280dp"
+                        android:text="UPDATE"
+                        android:layout_gravity="center"
+                        android:onClick="update"
+
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

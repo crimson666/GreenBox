@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="50dp"
+    android:background="#fff">
+
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        >
+
+
+        <ImageView
+
+
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="3px"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Green "
+                android:layout_weight="1"
+                android:textSize="35dp"
+                android:textColor="#A1C057"
+                android:gravity="end"
+                android:id="@+id/splash_title1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Busket"
+                android:textSize="35dp"
+                android:textColor="#252525"
+                android:layout_weight="1"
+                android:id="@+id/splash_title2"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <EditText
+            android:layout_marginTop="70dp"
+            style="@style/edit_txt"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:hint="USERID"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+        <android.support.design.widget.TextInputEditText
+            style="@style/edit_txt"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+
+            >
+        </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+
+            style="@style/buttons_style1"
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:text="SUBMIT"
+            android:onClick="onclick1"
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password |"
+                android:id="@+id/forgot_pass"
+                android:textColor="#ff6666"
+                android:gravity="end"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" New? Register"
+                android:id="@+id/register"
+                android:textColor="#252525"
+
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:onClick="onclick2"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
